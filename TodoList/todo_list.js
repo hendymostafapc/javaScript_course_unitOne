@@ -5,7 +5,7 @@ const clearCompletedBtn = document.getElementById("clearCompletedBtn");
 let tasks = [];
 
 function addTask (){
-    const taskText = taskInput.ariaValueMax.trim();
+    const taskText = taskInput.value.trim();
     if (taskText !==""){
         tasks.push({text: taskText});
         taskInput.value = "";
